@@ -70,7 +70,7 @@ function returnNothing(): void {
 <br/>
 
 ## 1. interface
----
+
 interface는 클래스 또는 객체를 위한 타입을 지정할 때 사용하는 문법이다.
 ```ts
 // Shape 라는 interface 를 선언합니다.
@@ -161,7 +161,7 @@ public으로 선언된 값은 클래스 외부에서 조회할 수 있지만, pr
 <br/>
 
 ## 2. 일반 객체 interface로 타입 설정하기
----
+
 ```ts
 interface Person {
   name: string;
@@ -206,7 +206,6 @@ const people: Person[] = [person, expert];
 ```
 
 ## 3. Type Alias 사용하기
----
  
 type은 특정 타입에 별칭을 붙이는 용도로 사용한다. 이를 사용하여 객체를 위한 타입을 설정할 수도 있고, 배열, 또는 그 어떤 타입이던 별칭을 지어줄 수 있다. 위에서 배운 interface와 비슷하다. 클래스와 관련된 타입은 interface를, 일반 객체 타입의 경우엔 그냥 type을 사용해도 괜찮다. 사실상 크게 상관은 없지만, 무엇이든 일관성 있게만 사용하면 된다. (interface VS type 기술 블로그 예약)
 
@@ -240,7 +239,7 @@ const colors: Color[] = ['red', 'orange'];
 ```
 
 ## 4. Generics
----
+
 제너릭은 타입스크립트에서 함수, 클래스, interface, type alias 를 사용하게 될 때, 여러 종류의 타입에 대하여 오환을 맞춰야 하는 상황에서 사용하는 문법이다.
 <br/>
 <br/>
@@ -280,7 +279,7 @@ const wrapped = wrap(10);
 <br/>
 
 ## 5. Interface 에서 Generics 사용하기
----
+
 ```ts
 interface Items<T> {
   list: T[];
@@ -306,7 +305,7 @@ const items: Items<string> = {
 <br/>
 
 ## 6. Class 에서 Generics 사용하기
----
+
 데이터를 등록할 수 있는 자료형이며, 먼저 등록(enqueue)한 항목을 먼저 뽑아올 수(dequeue) 있는 성절을 가지고 있는 Queue 이라는 클래스를 만들어보자.
 ```ts
 class Queue<T> {
