@@ -10,3 +10,4 @@
 - [Algorithm](https://github.com/cue28/TIL/tree/main/Algorithm)
 - [JavaScript](https://github.com/cue28/TIL/tree/main/JavaScript)
 - [TypeScirpt](https://github.com/cue28/TIL/tree/main/TypeScript)
+- [ComputerScience](https://github.com/cue28/TIL/tree/main/ComputerScience)
