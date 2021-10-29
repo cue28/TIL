@@ -84,6 +84,19 @@ SSR 방식은 뷰를 서버에서 전부 렌더링하기 때문엔 HTML에 모�
 
 어떤 것이 더 좋다고 말할 순 없지만, 적절한 상황에 섞어 활용하는 것이 가장 중요하다.
 
+![12](../assets/images/SSRvsCSR/SSRvsCSR.012.jpeg)
+
+대표적인 예로 MPA와 SPA가 있다.
+
+MPA는 Multiple Page Application이라고 불리며, 여러개의 페이지로 구성된다. 새로운 페이지 요청할 때마다 정적 리소스 다운로드하기 떄문에 페이지 이동, 새로고침 시 전체 페이지 렌더링된다. SSR 방식이라고 할 수 있다.
+
+SPA는 Single Page Application로, 한 개의 페이지로 구성되어 있다. 모든 정적 리소스를 최초 한 번만 다운로드한다.이후, 새로운 페이지 요청이 있을 때만 데이터만 받아서 페이지 리로딩 없이 필요한 부분만 갱신하게 된다. CSR 방식이라고 할 수 있다.
+
+React, Vue와 같은 프레임워크로 SPA가 많이 쓰인다. SPA의 단점을 보완하고자 
+React에서는 Next.js 프레임워크, Vue에서는 SSR을 지원하는 Nuxt.js 프레임워크로 SPA 에서도 SSR 방식을 사용할 수 있는 방법이 있다.
+
+[Next.js 공식문서](https://nextjs.org/docs/getting-started)
+
 
 ---
 
@@ -94,4 +107,6 @@ Ref.
 https://velog.io/@midsummer/SSR-CSR-SEO
 - https://ivorycode.tistory.com/entry/SSRSever-Side-Rendering%EA%B3%BC-CSRClient-Side-Rendering
 - https://youtu.be/i4r1fUeLJcw (SEO 7분)
+- https://hanamon.kr/spa-mpa-ssr-csr-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EB%9C%BB%EC%A0%95%EB%A6%AC/
+
 
