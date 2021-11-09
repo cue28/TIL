@@ -258,6 +258,7 @@ Reducer의 Immutability(불변성) 때문에 복사해서 사용한다.
     const { userInfo } = userState;
     ```
     
+Redux 과정은 동기적으로 발생한다. 이 때문에 비동기 통신으로 state를 업데이트하기 위해서는 미들웨어를 사용해야한다. 가장 많이 사용되고 있는 것이 redux-thunk, redux-saga이다. 방식이 다를 뿐 비동기 처리를 지원한다는 것은 같다. reducer로 가기전에 미들웨어에서 비동기 로직을 처리한다고 보면 된다.
 
 ### redux-saga
 
@@ -266,6 +267,8 @@ Reducer의 Immutability(불변성) 때문에 복사해서 사용한다.
 
 ---
 ### ref.
+
+https://ko.redux.js.org/
 
 - redux 새로고침 상태 유지
 
