@@ -9,6 +9,8 @@
 
 - [Algorithm](https://github.com/cue28/TIL/tree/main/Algorithm)
 - [JavaScript](https://github.com/cue28/TIL/tree/main/JavaScript)
+- [Node.js](https://github.com/cue28/TIL/tree/main/Node.js)
+- [Redux](https://github.com/cue28/TIL/tree/main/Redux)
 - [TypeScirpt](https://github.com/cue28/TIL/tree/main/TypeScript)
 - [Web](https://github.com/cue28/TIL/tree/main/Web)
 - [ComputerScience](https://github.com/cue28/TIL/tree/main/computerScience)
