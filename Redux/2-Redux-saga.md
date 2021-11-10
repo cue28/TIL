@@ -52,3 +52,27 @@ function* sumGenerator() {
     yield a + b;
 }
 ```
+`next`를 호출 할 때 인자를 전달하여 제네레이터 함수 내부에서 사용할 수도 있다.
+
+그렇다면 Generator로 어떻게 액션 모니터링이 일어날까?
+```js
+function* watchGenerator() {
+    console.log('모니터링 시작!');
+    while(true) {
+        const action = yield;
+        if (action.type === 'HELLO') {
+            console.log('안녕하세요?');
+        }
+        if (action.type === 'BYE') {
+            console.log('안녕히가세요.');
+        }
+    }
+}
+
+const watch = watchGenerator();
+watch.next({type:'HELLO'}) //안녕하세요?
+```
+이러한 원리로 액션을 모니터링하고, 특정 액션이 발생했을 때 원하는 자바스크립트 코드를 실행시켜준다.
+
+
+https://react.vlpt.us/redux-middleware/10-redux-saga.html
