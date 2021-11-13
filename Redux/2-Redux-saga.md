@@ -74,5 +74,9 @@ watch.next({type:'HELLO'}) //안녕하세요?
 ```
 이러한 원리로 액션을 모니터링하고, 특정 액션이 발생했을 때 원하는 자바스크립트 코드를 실행시켜준다.
 
+saga 구현 성공했다 ! 야호 !
+많은 삽질이 있었다. Notion에 메모해놓은 것들을 정리해서 TIL에 업로드할 예정이다.
 
+ref.
 https://react.vlpt.us/redux-middleware/10-redux-saga.html
+
