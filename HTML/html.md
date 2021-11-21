@@ -239,3 +239,116 @@
 - action : 입력 데이터의 전달 위치를 지정한다.
 - method : 입력 데이터의 전달 방식을 선택한다.
 
+```html
+<form method="get">
+    <input type="text" name="search" />
+    <input type="submit" />
+</form>
+
+<form method="post">
+    <input type="text" name="search" />
+    <input type="submit" />
+</form>
+```
+- 제출 버튼을 누르면 한 번 새로고침이 된다.
+- 변화는 없게 느껴질 수 있지만 get방식의 주소를 보면 변경되어 있음을 볼 수 있다.
+- http://localhost:포트번호/폴더이름/파일이름?search=검색어 형태로 바꿔져있을 것이다.
+- 나머지는 서버와 연결되어 있는 내용이라 책에서 다루지 않는다.
+
+## 기본 input 태그
+- input 태그는 사용자에게 정보를 입력받는 기능을 수행하는 태그
+- 비밀번호와 파일을 입력받을 수도 있다.
+```html
+<form>
+    <input type="text" name="name" /><br />
+    <input type="password" name="password" /><br />
+    <input type="file" name="file" /><br />
+    <input type="submit" />
+</form>
+```
+- type 속석을 사용한다.
+- button : 버튼 생성
+- checkbox : 체크박스 생성
+- file : 파일 입력 양식 생성
+- hidden : 보이지 않게
+- image : 이미지 형태 생성
+- password : 비밀번호 양식 생성
+- radio : 라디어 버튼 생성
+- reset : 초기화 버튼 생성
+- submit : 베출 버튼 생성
+- text : 글자 입력 양식 생성
+- 일반적으로 form 태그 안에 있어야하지만, 최근에는 Ajax 기술 활성화로 인해 규칙을 지키지 않는 경우가 늘고 있다.
+- label : input 태그를 설명하는 데 사용한다.
+- for 속성을 사용해 어떤 태그를 설명하는지 해당 id를 넣어주어야한다.
+```html
+<form>
+    <label for="name">이름</label>
+    <input id="name" type="text" />
+</form>
+```
+## HTML5 입력 양식 태그
+- 앞서 살펴본 HTML 태그는 HTML4에서 지원하던 input 태그이다.
+```html
+<form>
+    //색상 선택 양식
+    <input type="color" /><br /> /
+    //일 선택 양식
+    <input type="date" /><br />
+    //날짜 선택 양식
+    <input type="datetime" /><br />
+    //지역 날짜 선택 양식
+    <input type="datetime-local" /><br />
+    //이메일 입력 양식
+    <input type="email" /><br />
+    <input type="month" /><br />
+    <input type="number" /><br />
+    //범위 선택 양식
+    <input type="range" /><br />
+    //검색어
+    <input type="search" /><br />
+    <input type="tel" /><br />
+    //시간
+    <input type="time" /><br />
+    <input type="url" /><br />
+    <input type="week" />
+</form>
+```
+
+## textarea 태그
+- input 태그가 아닌 입력 양식은 2개
+- textarea : 여러 줄의 글자를 입력할 때 사용
+- cols : 태그의 너비
+- rows : 태그의 높이 지정
+- 아래 처럼 미리 입력하는 것 가능하다. 지저분할지라도 이렇게 사용해야지 정상적으로 출력된다.
+```html
+<textarea>Hello Textarea
+Hello Textarea</textarea>
+```
+- select : 여러 개의 목록에서 몇 가지를 선택할 수 있는 입력 양식 요소
+- optgroup : 옵션 그룹화
+- option : 옵션 생성
+- 내장된 옵션 화면이 나오며, 싫으면 직접 만들어야한다.
+```html
+<select multiple="multiple">
+    <option>김밥</option>
+    <option>떡볶이</option>
+    <option>순대</option>
+    <option>오뎅</option>
+</select>
+```
+- multiple 속성을 하면 여러가지가 선택 가능하다.
+```html
+<select>
+    <optgroup label="HTML5">
+        <option>Multimedia Tag</option>
+        <option>Connectivity</option>
+        <option>Device Access</option>
+    </optgroup>
+    <optgroup label="CSS3">
+        <option>Animation</option>
+        <option>3D Transform</option>
+    </optgroup>
+</select>
+```
+- 그룹을 만들어 줄 수 있다.
+- 최근에는 데스크톱에서 예쁘지 않아 잘 사용하지 않는다.
