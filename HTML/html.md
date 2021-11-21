@@ -255,7 +255,7 @@
 - http://localhost:포트번호/폴더이름/파일이름?search=검색어 형태로 바꿔져있을 것이다.
 - 나머지는 서버와 연결되어 있는 내용이라 책에서 다루지 않는다.
 
-## 기본 input 태그
+**기본 input 태그**
 - input 태그는 사용자에게 정보를 입력받는 기능을 수행하는 태그
 - 비밀번호와 파일을 입력받을 수도 있다.
 ```html
@@ -286,7 +286,7 @@
     <input id="name" type="text" />
 </form>
 ```
-## HTML5 입력 양식 태그
+**HTML5 입력 양식 태그**
 - 앞서 살펴본 HTML 태그는 HTML4에서 지원하던 input 태그이다.
 ```html
 <form>
@@ -314,7 +314,7 @@
 </form>
 ```
 
-## textarea 태그
+**textarea 태그**
 - input 태그가 아닌 입력 양식은 2개
 - textarea : 여러 줄의 글자를 입력할 때 사용
 - cols : 태그의 너비
@@ -352,3 +352,70 @@ Hello Textarea</textarea>
 ```
 - 그룹을 만들어 줄 수 있다.
 - 최근에는 데스크톱에서 예쁘지 않아 잘 사용하지 않는다.
+
+**fieldset, legend**
+- 입력 양식을 설명하는 태그
+- legend 태그는 fieldset 태그 내부에서만 사용할 수 있습니다.
+```html
+<form>
+    <fieldset>
+        <legend>입력 양식</legend>
+        <table>
+            <tr>
+                <td><label for="name">이름</label></td>
+                <td><input id="name" type="text" /></td>
+            </tr>
+            <tr>
+                <td><label for="mail">이메일</label></td>
+                <td><input id="mail" type="email" /></td>
+            </tr>
+        </table>
+        <input type="submit" />
+    </fieldset>
+</form>
+```
+
+## 공간 분할 태그
+- 가장 대표적인 공간 분할 태그는 div 태그
+- `<div>` : block 형식으로 공간 분할
+- `<span>` : inline 형식으로 공간 분할
+
+**display**
+- block : div, h1~h6, p, 목록, 테이블, form 태그
+- inline : span, a, input, 글자 형식 태그
+- inlink-block : 이미지, 멀티미디어 태그
+
+**HTML5 시멘틱 구조 태그**
+- 시멘틱 : 의미론적인
+- 사람은 눈으로 레이아웃을 볼 때 이것은 제목이고 이것이 내용이다! 라는 것을 볼 수 있지만, 컴퓨너틑 그렇지 않다.
+- 기계적인 검색 엔진은 어떠한 태그가 어떠한 기능을 분별할 수 없고, 웹 페이지에서 데이터를 효율적으로 추출할 수 없습니다.
+- 이를 해결하고나 태그에 의미를 부여해 만들기 시작했습니다. 이런 웹은 시멘틱 웹이라고 합니다.
+```html
+<body>
+    <header> //-> 헤더
+        <h1>HTML5 Header</h1>
+    </header>
+    <nav> //-> 네비게이션
+        <ul>
+            <li><a href="#">Menu - 1</a></li>
+            <li><a href="#">Menu - 2</a></li>
+            <li><a href="#">Menu - 3</a></li>
+        </ul>
+    </nav>
+    <section> //-> 여러 중심 내용을 감싸는 공간
+        <article> //-> 글자가 많이 들어가는 부분
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed nisi velit. Phasellus suscipit pellentesque leo, vel efficitur mi placerat sed. Fusce vel condimentum leo, at iaculis ante. Suspendisse posuere, dolor non tempor ullamcorper, nisl elit facilisis erat, nec lacinia augue erat id lacus. Curabitur mollis, justo nec lobortis hendrerit, libero nunc aliquam lacus, ut tristique sem nunc eu metus. Quisque varius orci eu felis sollicitudin malesuada. Vivamus pretium ligula velit, eget facilisis enim imperdiet ac.</p>
+        </article>
+        <article>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Nam enim sem, pulvinar sed nibh non, vestibulum suscipit dui. Vestibulum vitae sodales velit. Nam cursus, velit id semper malesuada, sem mauris iaculis diam, sit amet auctor ligula lectus in eros. Aliquam tincidunt semper odio, sit amet ornare neque tristique ut. Suspendisse placerat consequat lectus ut varius. Aliquam in ligula non massa auctor porta. Proin auctor mattis elit sit amet tincidunt. Cras auctor mauris augue, et volutpat diam iaculis vitae.</p>
+        </article>
+    </section>
+    <footer> //-> 푸터
+        <address>서울특별시 강서구 내발산동</address>
+    </footer>
+</body>
+```
+- `<aside>` : 사이드에 위치하는 공간을 의미
+- 최대한 웹으로 개발해주는 것이 웹 콘텐츠 확산에 일조할 수 있다. 
