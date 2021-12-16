@@ -4,8 +4,10 @@ chapter당 시간 소요가 많이되어 효율적인 방법으로 공부하기 
 https://www.youtube.com/c/FE%EC%9E%AC%EB%82%A8<br/>
 
 ## 코어 자바스크립트
+
 2021.11.29 1회독 완료
 
+2회독 진행중 [Link](https://www.siyoonjeon.com/a3717637-31bb-4ac9-a2d4-cd5c86f00d96)
 ## 모던 자바스크립트
 1회독<br/>
 2021.11.19 ~12장
